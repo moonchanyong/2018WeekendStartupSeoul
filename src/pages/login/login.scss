@@ -1,0 +1,59 @@
+page-login {
+
+
+	#fb-button{
+		position: fixed;
+		bottom: 20vh;
+		height: 5vh;
+		width: 90vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		z-index: 1;
+		
+	}
+	#kakao-button{
+		position: fixed;
+		bottom: 14vh;
+		height: 5vh;	
+		width: 90vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		z-index: 1;
+	}
+
+	.slide-css{
+		background-color: #eee;
+	}
+	#slide1{
+		// background-image: url("../assets/imgs/slide1.jpeg");
+		background-repeat: no-repeat;
+		background-size: auto;
+		width:100vw;
+		height: 100vh;
+		z-index: -1;
+	}
+	#sign-in{
+		position: fixed;
+		bottom: 11vh;
+		font-size: 2vh;
+		height: 2vh;
+		width: 50vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		z-index: 1;
+		left:0;
+		color: white;
+	}
+	#sign-up{
+		position: fixed;
+		bottom: 11vh;
+		font-size: 2vh;
+		height: 2vh;
+		width: 50vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		z-index: 1;
+		right:0;
+		color: white;
+	}
+}

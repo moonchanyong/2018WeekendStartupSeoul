@@ -75,6 +75,10 @@ var PayPage = (function () {
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
+        var marker = new google.maps.Marker({
+            position: latLng,
+            map: this.map
+        });
     };
     PayPage.prototype.goToChat = function () {
         this.navCtrl.setRoot("ChatPage", { data: this.data });

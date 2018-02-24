@@ -34,11 +34,11 @@ var map = {
 		3
 	],
 	"../pages/phothgrapher-list/phothgrapher-list.module": [
-		274,
+		275,
 		2
 	],
 	"../pages/reservation/reservation.module": [
-		275,
+		274,
 		1
 	],
 	"../pages/sign-up/sign-up.module": [
@@ -117,8 +117,8 @@ var AppModule = (function () {
                         { loadChildren: '../pages/chat/chat.module#ChatPageModule', name: 'ChatPage', segment: 'chat', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/pay/pay.module#PayPageModule', name: 'PayPage', segment: 'pay', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/phothgrapher-list/phothgrapher-list.module#PhothgrapherListPageModule', name: 'PhothgrapherListPage', segment: 'phothgrapher-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/reservation/reservation.module#ReservationPageModule', name: 'ReservationPage', segment: 'reservation', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/phothgrapher-list/phothgrapher-list.module#PhothgrapherListPageModule', name: 'PhothgrapherListPage', segment: 'phothgrapher-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/sign-up/sign-up.module#SignUpPageModule', name: 'SignUpPage', segment: 'sign-up', priority: 'low', defaultHistory: [] }
                     ]
                 })

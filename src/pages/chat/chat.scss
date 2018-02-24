@@ -1,0 +1,191 @@
+page-chat {
+
+  ion-slides > div > div.swiper-wrapper > ion-slide.pg.swiper-slide.swiper-slide-active > div{
+		height: 100%;  	
+  }
+
+  #m2y{
+    background-image: url("../assets/imgs/speechbuble2.png");
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 45vw;
+    height: 30vh;
+    margin-left: 50vw;
+    padding: 5vh;
+    color: #7ED2BC;
+    font-weight: bold;
+  }
+  #y2m{
+    background-image: url("../assets/imgs/speechbuble.png");
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50vw;
+    height: 30vh;
+    margin-left: 5vw;
+      padding: 5vh;
+    color: #7ED2BC;
+    font-weight: bold;
+    
+  }
+  
+#p2{
+    background-image: url("../assets/imgs/p2.png");
+    background-color: #fbfbfb;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #n2{
+    background-image: url("../assets/imgs/n2.png");
+    background-color: #fbfbfb;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: white;
+  }
+  .topDiv{
+    display: -webkit-box;
+    border-bottom:  2px solid #7ED2BC;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+    height: 12vh;
+  }
+  .topRDiv{
+    width: calc(80vw - 10vh );
+
+  }
+   .pic{
+      text-align: center;
+      width: 10vh;
+      height: 10vh;
+      margin-left: 5vw;
+      margin-right: 5vw;
+      border-radius: 50%;
+      background-color:#7ED2BC;
+
+    }
+    .star{
+      background-image: url("../assets/imgs/star.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-color: transparent; 
+      
+
+    }
+    .lab{
+    margin-left: 5vw;
+    color: #7ED2BC;
+    width: 90vw !important;
+    font-weight: bold;
+    border-bottom: 2px solid #7ED2BC;
+  }
+    .dron{
+      background-image: url("../assets/imgs/drone.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-color: transparent; 
+    }
+
+
+    .text{
+      height: 3vh;
+      width: calc(70vw - 10vh);
+      text-align: center;
+      line-height: 3vh;
+      margin: 0;
+      margin-right: 5vw;
+      margin-left: 5vw;
+    }
+.card{
+  	height: 40vw;
+  	width: 90vw;
+  	margin-right: 5vw;
+  	margin-left: 5vw;
+
+  }
+  .fullbox{
+  	width: 100%;
+  	height: 100%;
+  }
+  .piccol{
+  	position: absolute;
+  	width: 40vw;
+  	left:5vw;
+  	height: 40vw;
+  	.pic{
+  		width: 100%;
+  		height: 100%;
+  		border-radius: 50%;
+  		background-color:#7ED2BC;
+  	}
+
+  }
+  .infocol{
+  	padding: 0;
+  	position: absolute;
+	width: 50vw;
+  	right:5vw;  	
+  	height: 40vw;
+  	.text{
+  		height: 8vw;
+  		text-align: center;
+  		line-height: 8vw;
+      margin: 0;
+  	}
+    button{
+      margin: 0;
+      padding: 0;
+      height: 15vw;
+    }
+  }
+
+  .lab{
+  	margin-left: 5vw;
+  	color: #7ED2BC;
+  	width: 90vw !important;
+    border-bottom: 2px solid #7ED2BC;
+  }
+  .txtbox{
+    margin-left: 5vw;
+    
+    margin-top: 1vh;
+  }
+
+  .scroll {
+    height: 100%
+  }
+
+  #map {
+
+    width: 100%;
+    height: 40%;
+  }
+ 
+  #btn{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 90vw;
+
+  }
+
+  #message{
+  	position: absolute;
+  	bottom: 0;
+  	width:80vw;
+  	right: 0;
+
+  }
+  #send-btn{
+  	position: absolute;
+  	bottom: 0;
+  	width:20vw;
+  	left: 0;
+  }
+}

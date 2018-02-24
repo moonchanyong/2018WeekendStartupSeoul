@@ -1,0 +1,103 @@
+<div id="setDiv" *ngIf="setDivVisible" (click)="goToClient()">
+  </div>
+<div id="signup-complate" *ngIf="divVisible" (click)="openSetbutton()">
+  </div>
+<ion-content overflow-scroll="false">
+
+
+  <div #map id="map"></div> 
+
+ <div id="container">
+ 	
+ 
+    <ion-item id="signup-birthday" no-padding>
+      <ion-label class="label_title">
+        DATE
+      </ion-label>
+      <ion-datetime no-padding
+        placeholder="예약날짜를 입력해 주세요"
+        displayFormat="YYYY DDD, MMM DD" 
+        pickerFormat="YYYY MM DD" 
+        min="2018-02-25" 
+        max="2019-02-25"
+        cancelText="취소"
+        doneText="완료"
+        [(ngModel)]="reservationDay"
+        name="signup-birthday">
+      </ion-datetime>
+    </ion-item>
+
+    <ion-row>
+    	<ion-col class ="col2">
+    		<ion-label color="pickle">Location</ion-label>
+    	</ion-col >
+    	<ion-col class="col2">
+    		<ion-label color="pickle">Country</ion-label>
+    	</ion-col >
+    	<ion-col  class="col4">
+    		<ion-select interface="popover" [(ngModel)]="country" placeholder="Country">
+    			<ion-option value="프랑스">프랑스</ion-option>
+    			<ion-option value="방콕">방콕</ion-option>
+    			<ion-option value="태국">태국</ion-option>
+    			<ion-option value="방콕">방콕</ion-option>
+    			<ion-option value="태국">태국</ion-option>
+    			<ion-option value="방콕">방콕</ion-option>
+    		</ion-select>
+    	</ion-col>
+    </ion-row>
+    <ion-row>
+    	<ion-col class ="col2">
+    		<ion-label color="pickle"></ion-label>
+    	</ion-col >
+    	<ion-col class="col2">
+    		<ion-label color="pickle">City</ion-label>
+    	</ion-col >
+    	<ion-col  class="col4">
+    		<ion-select interface="popover" [(ngModel)]="city" placeholder="city">
+    			<ion-option value="파리">파리</ion-option>
+    			<ion-option value="대전">대전</ion-option>
+    			<ion-option value="대구">대구</ion-option>
+    			<ion-option value="부산">부산</ion-option>
+    		</ion-select>
+    	</ion-col>
+    </ion-row>
+        <ion-row>
+    	<ion-col class ="col2">
+    		<ion-label color="pickle"></ion-label>
+    	</ion-col >
+    	<ion-col class="col2">
+    		<ion-label color="pickle">Pin point</ion-label>
+    	</ion-col >
+    	<ion-col  class="col4">
+    		<ion-select interface="popover" [(ngModel)]="pinPoint" placeholder="pinPoint">
+    			<ion-option value="카오산 로드">카오산 로드</ion-option>
+    			<ion-option value="경리단 길">경리단 길</ion-option>
+    			<ion-option value="명동 오거리">명동 오거리</ion-option>
+    			<ion-option value="뱅뱅 사거리">뱅뱅 사거리</ion-option>
+    			<ion-option value="에펠탑">에펠탑</ion-option>
+    		</ion-select>
+    	</ion-col>
+    </ion-row>
+    <ion-row>
+	<ion-col class ="col2">
+		<ion-label color="pickle">Time</ion-label>
+	</ion-col >
+	
+	<ion-col  class="col8">
+		<ion-select interface="popover" [(ngModel)]="time" placeholder="time">
+			<ion-option value="1">1</ion-option>
+			<ion-option value="2">2</ion-option>
+			<ion-option value="3">3</ion-option>
+			<ion-option value="4">4</ion-option>
+			<ion-option value="5">5</ion-option>
+		</ion-select>
+	</ion-col>
+</ion-row>
+</div>
+    <button id="next-btn" ion-button round color="pickle" (click)="goTopgl()" >
+          Next
+    </button>
+    
+  
+
+</ion-content>

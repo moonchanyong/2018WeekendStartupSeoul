@@ -21,5 +21,9 @@ export class LoginPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
+  signup(){
+  	console.log("go to signup page");
+  	this.navCtrl.push("SignUpPage");
 
+  }
 }

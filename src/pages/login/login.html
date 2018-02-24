@@ -9,7 +9,7 @@
 
 <ion-content>
 
-	<ion-slides autoplay="10000" pager="true" effect="flip">
+	<ion-slides autoplay="2000" pager="true" effect="flip" loop="true">
 	  <ion-slide id="slide1" class="slide-css">
 	   
 	  </ion-slide>
@@ -19,20 +19,16 @@
 	  <ion-slide id="slide3" class="slide-css">
 
 	  </ion-slide>
-	   <ion-slide id="slide4" class="slide-css">
-
-	  </ion-slide>
-	  <ion-slide id="slide5" class="slide-css">
-	  </ion-slide>
+	   
 
 	</ion-slides>
 
-	<button id="fb-button" ion-button color="fb"  >
-		ss
-	</button>
-	<button id="kakao-button" ion-button color="kakao" >
-		ss
-	</button>
+	<div id="fb-button" ion-button (click)="signup()" color="fb"  >
+		
+	</div>
+	<div id="kakao-button" ion-button color="kakao" >
+	
+	</div>
 	<button ion-button id="sign-in" clear> login </button>
-	<button ion-button id="sign-up" clear> join </button>
+	<button ion-button id="sign-up" clear > join </button>
 </ion-content>

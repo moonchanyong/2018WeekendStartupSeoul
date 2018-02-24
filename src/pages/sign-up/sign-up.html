@@ -1,0 +1,81 @@
+<div id="setDiv" *ngIf="setDivVisible" (click)="goToClient()">
+  </div>
+<div id="signup-complate" *ngIf="divVisible" (click)="openSetbutton()">
+  </div>
+<ion-content overflow-scroll="false">
+
+  <div id="logo" >
+
+  </div>
+  
+  <form #f="ngForm" novalidate id="signup-form">
+    <ion-item no-padding id="signup-email" >
+      <ion-input
+          email
+          [(ngModel)]="name"
+          ngModel
+          id="signup-id"
+          required
+          type="text"
+          name="name"
+          placeholder="이름"
+          ngModel>
+      </ion-input>
+    </ion-item>
+    
+    
+      <ion-item no-padding id="signup-password" >
+        <ion-input required type="password" name="pwd" placeholder="비밀번호"
+          [(ngModel)]="pwd"></ion-input>
+      </ion-item>
+      <ion-item no-padding id="signup-password-confirm" >
+        <ion-input type="password" name="check_pwd" placeholder="비밀번호 확인"
+          [(ngModel)]="pwdCheck" ></ion-input>
+      </ion-item>
+    <ion-item no-padding id="signup-email" >
+      <ion-input
+          email
+          [(ngModel)]="mail"
+          ngModel
+          id="signup-id"
+          required
+          type="text"
+          name="mail"
+          placeholder="이메일"
+          ngModel>
+    </ion-input>
+
+    </ion-item>
+    
+
+    <ion-item no-padding id="signup-name">
+      <ion-input [(ngModel)]="phone" ngModel type="tel" name="username" placeholder="전화번호" required></ion-input>
+    </ion-item>
+
+	<ion-item no-padding id="signup-name">
+      <ion-input [(ngModel)]="number" ngModel type="number" name="username" placeholder="인증번호" required></ion-input>
+    </ion-item>
+
+    <ion-item id="signup-birthday" no-padding>
+      <ion-label class="label_title">
+        생년월일
+      </ion-label>
+      <ion-datetime no-padding
+        placeholder="생년월일을 선택해주세요."
+        displayFormat="YYYY년 MM월 DD일" 
+        pickerFormat="YYYY MM DD" 
+        min="1800-01-01" 
+        max="2100-12-31"
+        cancelText="취소"
+        doneText="완료"
+        [(ngModel)]="birthday"
+        name="signup-birthday">
+      </ion-datetime>
+    </ion-item>
+  
+  </form>
+        <button class="center-btn" id="signup-btn" ion-button round color="pickle" (click)="signup(f)">
+          가입하기
+        </button>
+
+</ion-content>

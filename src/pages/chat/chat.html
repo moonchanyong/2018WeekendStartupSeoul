@@ -1,0 +1,35 @@
+
+
+<ion-content >
+	  <div class="topDiv">
+      <div class="pic" id="p2"></div>
+      <div class="topRDiv">
+        <p class="text" id="n2"></p>
+        <p class="text dron">{{(data!=null)?data.device:""}}</p>
+        <p class="text star">{{(data!=null)?data.star:""}}</p>
+      </div>
+    </div>
+
+	<label class="lab">Message</label>
+
+
+
+	<div id="m2y">
+		안녕하세요 혹시 12시 촬영 가능한가요?
+	</div>
+
+	<div id="y2m">
+	  Oui, oui
+	</div>
+
+
+    <div id="main">
+    	
+    </div>
+
+    <ion-input [(ngModel)]="txt" id="message" placeholder="메세지를 입력하세요">  </ion-input>
+    <button id="send-btn" ion-button color="pickle" (click)="send()" >
+    	전송
+    </button>
+
+</ion-content>
